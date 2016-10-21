@@ -46,7 +46,8 @@
 
 	var addClass = function(ele, cls) {
 		if (!hasClass(ele, cls)){
-			ele.setAttribute('class', (ele[_getAttribute]('class') || '').trim() + ' ' + cls);
+			ele.
+			ribute('class', (ele[_getAttribute]('class') || '').trim() + ' ' + cls);
 		}
 	};
 
@@ -376,6 +377,7 @@
 
 			if(sourceSrcset){
 				source.setAttribute('srcset', sourceSrcset);
+				source.srcset = sourceSrcset;
 			}
 
 			//https://bugzilla.mozilla.org/show_bug.cgi?id=1170572
