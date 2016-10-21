@@ -375,7 +375,6 @@
 			}
 
 			if(sourceSrcset){
-				source.setAttribute('srcset', sourceSrcset);
 				source.srcset = sourceSrcset;
 			}
 
@@ -426,7 +425,7 @@
 				}
 
 				if(srcset){
-					elem.setAttribute('srcset', srcset);
+					elem.srcset = srcset;
 				} else if(src && !isPicture){
 					if(regIframe.test(elem.nodeName)){
 						changeIframeSrc(elem, src);
