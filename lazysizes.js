@@ -46,8 +46,7 @@
 
 	var addClass = function(ele, cls) {
 		if (!hasClass(ele, cls)){
-			ele.
-			ribute('class', (ele[_getAttribute]('class') || '').trim() + ' ' + cls);
+			ele.setAttribute('class', (ele[_getAttribute]('class') || '').trim() + ' ' + cls);
 		}
 	};
 
