@@ -376,6 +376,7 @@
 
 			if(sourceSrcset){
 				source.setAttribute('srcset', sourceSrcset);
+				source.srcset = sourceSrcset;
 			}
 
 			//https://bugzilla.mozilla.org/show_bug.cgi?id=1170572
@@ -425,7 +426,7 @@
 				}
 
 				if(srcset){
-					elem.setAttribute('srcset', srcset);
+					elem.srcset = srcset;
 				} else if(src && !isPicture){
 					if(regIframe.test(elem.nodeName)){
 						changeIframeSrc(elem, src);
